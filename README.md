@@ -1,6 +1,6 @@
 # Freshly Pressed
 
-An Android App that lists the most recent stories from WordPress.com Freshly Pressed.
+An Android App that lists the most recent stories from [WordPress.com Freshly Pressed API](https://developer.wordpress.com/docs/api/1/get/freshly-pressed/).
 
 ![demo](docs-media/demo/demo.gif) ![screenshot](docs-media/demo/screenshot.png)
 
