@@ -1,0 +1,86 @@
+buildscript {
+    ext.kotlin_version = '1.3.72'
+    ext.hilt_version = "2.28-alpha"
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        //I intend to use these in the whole application
+        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath "org.jetbrains.kotlin:kotlin-allopen:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+    }
+}
+
+allprojects {
+    repositories {
+        //I intend to use this in the whole application
+        jcenter()
+        google()
+    }
+}
+
+//put versions in a centralized location so that all modules of this project
+//use the same library versions
+ext {
+    min_SdkVersion = 21
+    target_SdkVersion = 30
+    compile_SdkVersion = 30
+
+    //Network - Retrofit + OkHttp
+    okHttpVersion = "4.0.1"
+    retrofitVersion = "2.9.0"
+    okhttpLoggingInterceptor = "4.8.0"
+    moshiVersion = "1.9.3"
+
+    //hilt
+    hiltKtxVersion = "1.0.0-alpha01"
+
+    //glide
+    glideVersion = "4.10.0"
+    //Ktx + Life cycles
+    androidXVersion = '1.2.0'
+    androidXAnnotations = '1.1.0'
+    androidXLegacySupport = '1.0.0'
+    archLifecycleVersion = '2.2.0'
+    fragmentKtxVersion = '1.2.5'
+    activityKtxVersion = "1.1.0"
+
+    //Kotlin Coroutines
+    coroutinesVersion = '1.3.7'
+
+    //UI
+    appCompatVersion = '1.0.2'
+    constraintLayoutVersion = "1.1.3"
+    cardVersion = '1.0.0'
+    recyclerViewVersion = '1.1.0'
+    materialVersion = '1.1.0'
+
+    //logging
+    timberVersion = '4.7.1'
+
+    //testing libs versions
+    junitVersion = "4.12"
+    mockitoKotlinVersion = "2.1.0"
+    assertjVersion = "3.11.1"
+    dexMakerVersion = '2.12.1'
+    truthVersion = '0.44'
+    androidXTestCoreVersion = '1.2.0'
+    androidXTestExtKotlinRunnerVersion = '1.1.1'
+    androidXTestRulesVersion = '1.3.0-beta01'
+    rulesVersion = '1.0.1'
+    robolectricVersion = '4.3.1'
+    hamcrestVersion = '1.3'
+    mockitoVersion = '2.8.9'
+    espressoVersion = '3.2.0-beta01'
+    archTestingVersion = '2.0.0'
+    fragmentVersion = '1.1.0-alpha07'
+
+    //paging library
+    pagingVersion = "3.0.0-alpha02"
+
+    //Room
+    roomVersion = "2.3.0-alpha01"
+}

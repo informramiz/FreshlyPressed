@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Freshly Pressed</string>
+    <string name="loading">Loading</string>
+    <string name="no_results">No results 😓</string>
+    <string name="unknown">\?</string>
+    <string name="retry">Retry</string>
+    <string name="posts_fragment_list_item_author_label">Author:</string>
+    <string name="posts_fragment_list_item_subscribers_count_label">Subscribers count:</string>
+</resources>

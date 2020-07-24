@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Main theme of the app  -->
+    <style name="AppTheme" parent="AppTheme.Base">
+
+    </style>
+
+    <!--  Base theme containing base attributes  -->
+    <style name="AppTheme.Base" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorAccent">@color/primaryLightColor</item>
+        <item name="android:textColorPrimary">@color/primaryTextColor</item>
+    </style>
+
+    <style name="Widget.App.ProgressBar" parent="Widget.AppCompat.ProgressBar">
+
+    </style>
+
+    <style name="TextAppearance.App.Title" parent="TextAppearance.MaterialComponents.Headline6">
+
+    </style>
+
+    <style name="Widget.App.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardCornerRadius">4dp</item>
+    </style>
+</resources>

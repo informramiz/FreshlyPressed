@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/Widget.App.CardView">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/post_list_item_header_height"
+        android:background="@color/headerBackgroundColor"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/horizontal_margin"
+        android:paddingEnd="@dimen/horizontal_margin"
+        android:textColor="@color/headerTextColor"
+        tools:text="Testing header" />
+
+</androidx.cardview.widget.CardView>
